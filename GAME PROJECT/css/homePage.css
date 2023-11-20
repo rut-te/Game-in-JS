@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Varela Round', sans-serif;
+    src: url(../fonts/VarelaRound-Regular.ttf);
+    font-weight: 400;
+    font-size: normal;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+    background-image: url("../pictures/backgroundWithWords.png");
+    font-family: 'Noto Sans Hebrew', sans-serif;
+    font-family: 'Rubik Spray Paint', cursive;
+}
+p{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2px;
+    text-align: center;
+}
+#video1{
+    height:97vh;
+    width:100%;
+    z-index: 0;
+}
+.games{
+    position:fixed;
+    z-index: 20;
+    margin-top: 50vh;
+    border-radius: 5%;
+}
+.games:hover{
+    opacity: 0.6;
+}
+#game1{
+    margin-left: 10vw;
+}
+#game2{
+    margin-left: 25vw;
+    margin-top: 60vh;
+}
+#game3{
+    margin-left: 60vw;
+    margin-top: 60vh;
+}
+#game4{
+    margin-left: 75vw;
+}
+img{
+    border: 8px double rgb(255, 255, 255);
+    height: 20vh;
+    border-radius: 10%;
+}
+a{
+    text-decoration-line: none;
+}
+#conect{
+	justify-content: center;
+    color: #fff;
+	background:#3B0048;
+	font-size: 1em;
+	font-weight: bold;
+	outline: auto;
+    padding: 1vh 1vh 1vh 1vh;
+	border-radius: 5px;
+	cursor: pointer;
+    position:fixed;
+    z-index: 20;
+    margin-top: 3vh;
+	margin-left: 18vh;
+}
+#conect:hover{
+    background-color: #fff;
+    color: #3B0048;
+}

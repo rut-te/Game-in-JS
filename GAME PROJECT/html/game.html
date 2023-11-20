@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/game.css">
+
+    <title>I want to be a cashier</title>
+    <link rel="shortcut icon" href="../pictures/food3.png">
+</head>
+
+<div id="lineOftimmer"></div>
+<div id="wordsOfTimmer">!הזמן שלך הולך ואוזל</div>
+
+<body>
+    <div id="buttonOfmessege">
+        <img src="../pictures/whiteHome.png" id="home" onclick=sendToHome()>
+        <img src="../pictures/whiteArrow.png" id="gameOver" onclick=sendToGame()>
+    </div>
+    <div id="level"></div>
+    <div id="pageOfInstructions"></div>
+    <button id="backFromInstructions">הבנתי</button>
+
+    <div id="allPeople">
+        <div id="details">
+            <div id="userName" class="details"></div>
+            <div id="userWin" class="details"></div>
+            <div id="userPoints" class="details"></div>
+            <br>
+            <div class="details" title="Instructions"><img src="../pictures/instructionsWithCircle.png"
+                    id="instructions" onclick=seeInstructions()></div>
+            <div class="details" title="homePage"><img src="../pictures/homeWithCircle.png" id="backToHome"
+                    onclick=sendToHome()></div>
+        </div>
+        <div id="person1" class="people">
+            <div id="man1"></div>
+            <div id="food1" class="foods"></div>
+            <div id="pay1" class="money"></div>
+        </div>
+
+        <div id="person2" class="people">
+            <div id="man2"></div>
+            <div id="food2" class="foods"></div>
+            <div id="pay2" class="money"></div>
+
+        </div>
+        <div id="person3" class="people">
+            <div id="man3"></div>
+            <div id="food3" class="foods"></div>
+            <div id="pay3" class="money"></div>
+
+        </div>
+        <div id="person4" class="people">
+            <div id="man4"></div>
+            <div id="food4" class="foods"></div>
+            <div id="pay4" class="money"></div>
+
+        </div>
+    </div>
+    <div id="forGrid">
+        <div id="coins1" class="coinses"><img src="../pictures/1.png" alt="1"></div>
+        <div id="coins2" class="coinses"><img src="../pictures/2.png" alt="2"></div>
+        <div id="coins5" class="coinses"><img src="../pictures/5.png" alt="5"></div>
+        <div id="coins10" class="coinses"><img src="../pictures/10.png" alt="10"></div>
+        <div id="sendMoney"><input id="send" type="button" value="החזרת העודף" onclick=checkResult()></div>
+        <div id="menu">
+            <p id="fontMenu"><strong>תפריט</strong></p>
+            <div id="prices">
+                <div>7<br><img class="foodPrice" src="../pictures/food1.png"></div>
+                <div>5<br><img class="foodPrice" src="../pictures/food2.png"></div>
+                <div>25<br><img class="foodPrice" src="../pictures/food3.png"></div>
+                <div>15<br><img class="foodPrice" src="../pictures/food4.png"></div>
+                <div>3<br><img class="foodPrice" src="../pictures/food5.png"></div>
+                <div>6<br><img class="foodPrice" src="../pictures/food6.png"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/game.js"></script>
+</body>
+
+</html>
